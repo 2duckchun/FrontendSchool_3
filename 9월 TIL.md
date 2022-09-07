@@ -31,3 +31,10 @@
  - 단어 뜻 그대로, embedded content는 외부의 컨텐츠를 끌어다가 html 문서에 내장시켜주는 역할을 한다.
  - embedded 엘리먼트들은 css 스타일링과 겹치는 부분이 있고, 상당한 기능이 있어 자유도가 높은 편이다.
  - 그러므로 mdn 등 문서를 그때그때 잘 찾아서 사용하는 습관을 들여야 한다.
+
+## 7일차 (9월 7일)
+ - Forms (input, label, select, fieldset, legend, button, textarea, datalist)에 대해 학습했다.
+ - Tabular data (table, caption, thead, tbody, tfoot, tr, th, td, colspan, rowspan, colgroup, col, scope)에 대해 학습했다.
+ - 특강) css :: 과제 풀이 및 마진 병합 현상에 대해 학습했다. (빔캠프 CSS)
+ - html이나 css나 대략적인 사용방법을 익힌 후, 필요할때마다 사용하면 될 것 같다.
+ - 그러나 무엇이 있는지는 확실히 알아놓아야 하겠다.
