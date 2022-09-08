@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- iframe은 현재 HTML 페이지에서 또 다른 HTML 페이지를 보여주고 싶을 때 사용함.
+    iframe은 width 혹은 height 어트리뷰트로 크기를 조절함.
+    따로 값을 설정하지 않는다면 height는 150px, width는 300px을 기본값으로 함 -->
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/So5kM7vyRDs" title="고인물 - Knockin' On Heaven's Door (band cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- autoplay는 mute와 함께 사용되어야 함 > UX를 위함 -->
+    <!-- 이러한 특징은 iframe, audio, video 엘리먼트에서도 동일하게 적용됨. -->
+    <!-- https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide -->
+
+
+    <!-- audio는 음악 컨텐츠를 재생하기 위한 태그임. -->
+    <audio src="폴더/파일명" controls autoplay loop></audio>
+    <!-- controls : 음악파일을 제어할 수 있는 컨트롤러를 불러옴 -->
+    <!-- autoplay : 로딩이 완료된 파일을 자동으로 재생 -->
+    <!-- loop : 음악을 반복함. -->
+
+    <!-- source 엘리먼트를 자식으로 사용해서 크로스 브라우징을 지원할 수 있음. -->
+    <audio controls>
+        <source src="flow.ogg" type="audio/ogg">
+        <source src="flow.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

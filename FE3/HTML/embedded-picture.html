@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture tag</title>
+</head>
+<body>
+    <!-- picture 엘리먼트는 source 엘리먼트와 img 엘리먼트를 통해 각기 다른 디스플레이나 디바이스에 따라 조건에 맞는 이미지를 보여줌 -->
+    <!-- img 엘리먼트의 srcset이 화면에 따른 이미지의 크기를 조절한다면
+    picture 엘리먼트는 포맷 자체를 변경할 수 있음. -->
+
+    <!-- media 어트리뷰트
+    source 엘리먼트 안의 media 어트리뷰트!
+    picture 엘리먼트는 media 어트리뷰트의 값을 통해 조건에 알맞는 이미지를 찾게 됨.-->
+    <!-- picture와 source 엘리먼트 요소 자체는 이미지를 표현하지 않음. -->
+    <picture>
+        <source srcset="이미지1.jpg" media="(min-width:960px)">
+        <source srcset="이미지2.jpg" media="(min-width:620px)">
+        <img src="이미지3.jpg" alt="테스트">
+    </picture>
+
+
+
+    <!-- type 어트리뷰트 -->
+    <!-- 이미지 포맷 타입을 브라우저에게 알려줌. -->
+    <picture>
+        <source srcset="이미지1.webp" type="image/webp">
+        <source srcset="이미지2.avif" type="image/avif">
+        <img src="이미지3.jpeg" alt="이미지" type="image/png">
+    </picture>
+    <!-- 위에서부터 차례대로 브라우저가 지원하는 포맷인지 탐색하여, 만약 지원되지 않는 포맷이라고 판단되면 다음 source 요소로 넘김. -->
+    <!-- 모든 요소가 사용 불가능하다면 최후에 img 요소의 이미지를 렌더링함. -->
+    <!-- 따라서 최신 포맷의 이미지를 이용하고 싶다면 크로스브라우징을 위해 picture 요소를 고려해볼만 함. -->
+    <!-- 이러한 방식을 '점진적 향상기법' 이라고 함. -->
+
+
+</body>
+</html>
