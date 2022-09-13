@@ -46,3 +46,17 @@
  - CSS를 본격적으로 배웠는데, 셀렉터에 대해 특히 심도있이 공부했던 것 같다. (셀렉터의 종류, 우선순위)
  - box에서는 벅참을 느꼈다. 외부 display와 내부 display의 차이점과 컴퓨터가 css를 연산하는 순서를 잘 파악해야 할 것 같다.
  - 추석때를 잘 활용해서 공부를 해야한다. (견고한 CSS 강의 부분을 들을 예정)
+---
+
+# 2주차
+
+## 9일차 (9월 9일)
+ - css에 대해 좀 더 심화적으로 공부했다.
+ - 다 외울 필요는 없다. 다만 인지하고 있고, 늘 찾아서 쓸 수 있을 정도의 기민함을 유지하자.
+ - position : static, relative, absolute, fixed, sticky
+ - z-index
+ - float : 띄우다/둥둥떠있다. left, right. 
+ - 자식요소가 모두 float일 경우, 부모가 자식의 넓이를 인식하지 못할 수도 있음. (이를 방지하기 위해 BFC를 이용함)
+ - 가상 클래스 선택자 (.class:first-child ~ .class:nth-child() 등
+ - 상호 작용을 위한 가상 클래스 (:hover, :active, :focus, :checked 등
+ - 가상 요소 선택자 (::before, ::after, ::selection)
