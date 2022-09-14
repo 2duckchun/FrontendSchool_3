@@ -50,7 +50,7 @@
 
 # 3주차
 
-## 9일차 (9월 9일)
+## 9일차 (9월 13일)
  - css에 대해 좀 더 심화적으로 공부했다.
  - 다 외울 필요는 없다. 다만 인지하고 있고, 늘 찾아서 쓸 수 있을 정도의 기민함을 유지하자.
  - position : static, relative, absolute, fixed, sticky
@@ -60,3 +60,13 @@
  - 가상 클래스 선택자 (.class:first-child ~ .class:nth-child() 등
  - 상호 작용을 위한 가상 클래스 (:hover, :active, :focus, :checked 등
  - 가상 요소 선택자 (::before, ::after, ::selection)
+
+## 10일차 (9월 14일)
+ - position, z-index, float에 대해 다시 공부했다.
+ - 네거티브 마진이란 것을 새로이 배웠다.
+ - 1만 시간의 법칙이라는 과제를 마무리했고, 로그인 위젯 화면을 하나 만들었다.
+ - float와 position, text에 관해 명확히 알고있지 못해 제작에 어려움이 있었다.
+ - 또한 markup에서 class명을 짓는 것이 상당히 어려웠다.
+ - 마크업할때 class명을 마크마다 해주는 것이 오히려 나을 수도 있다.
+
+
