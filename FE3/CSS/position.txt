@@ -1,0 +1,16 @@
+position: static;  -- 기본값
+position: relative -- (상대적인), 자신이 원래 있어야 하는 위치에 상대적으로 위치를 설정함. (본인의 static 위치에서 상대적으로 이동함)
+position: absolute -- (절대적인), 포지션에 절대값을 주기 위한 것. - 부모요소를 기준으로 이동함. (static을 제외한 position 속성값을 가진 가장 가까운 부모 박스 내 기준으로 위치)
+- 부모의 포지션이 static이라면(fixed, relative 등이 아니라면?) 그 조부모를 기준으로 찾아감.
+position: fixed -- 스크롤을 올리거나 내릴 때 특정 박스가 고정되어 움직이지 않았으면 한다면 fixed 속성을 이용해라.
+position fixed는 absolute가 position 속성값을 가진 가장 가까운 부몰르 기준으로 위치를 정하는 것처럼
+fixed는 현재 사용ㅈ가ㅏ 보고있는 브라우저 화면(뷰포트)를 기준으로 화면에 붙은 것처럼 그 자리에 계속해서 위치한다. (like navigation)
+
+position: sticky == 스크롤 동작이 존재하는 가장 가까운 부모 요소에 달라붙는다.
+
+
+z-index ) 요소와 요소가 겹쳐보이는 일이 발생 > 어떤 요소가 위로 나타나게 할 지 결정하는게 z-index 속성.
+static을 제외한 position 속성값이 적용된 요소의 Z 축 순서를 결정할 수 있으며
+z-index 값이 더 큰 요소가 값이 작은 요소의 위를 덮게 됨.
+
+z-index가 부모요소에 적용될 경우 자식요소를 덮을 수는 없음

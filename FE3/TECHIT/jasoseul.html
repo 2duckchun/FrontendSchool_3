@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>자소서 글자수 계산기</title>
+ </head>
+ <body>
+    <h1>자기소개</h1>
+    <textarea onkeydown='counter();' name="" id="jasoseol" cols="30" rows="10">저는 인성이 좋습ff니다.</textarea>
+    <span id="count"></span>
+    <script>
+        function counter () {
+        let val = document.getElementById("jasoseol").value;
+        if (val.length > 200) {
+            val = val.substring(0, 200)
+            document.getElementById('jasoseol').value = val
+        }
+        document.getElementById('count').innerHTML = `(${val.length} / 200)`;
+        }
+        
+
+        counter()
+
+// 이벤트 = 이벤트 핸들링
+    </script>
+ </body>
+ </html>

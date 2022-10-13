@@ -1,0 +1,27 @@
+a[href] {
+    font-size: 10px;
+}
+ - 태그[어트리뷰트이름] : 해당하는 어트리뷰트이름을 가진 태그를 모두 선택함.
+
+// [class] {}
+
+a[href="www.naver.com"] {
+    font-size: 10px;
+}
+ - 태그[어트리뷰트이름="값"] : 해당하는 어트리뷰트이름과 값을 가진 태그를 모두 선택함.
+
+a[class~="weniv"] {
+    color: pink;
+} // <a class="weniv 만세">바울</a>
+
+a[class^="http"] {
+    color : teal;
+}
+
+a[class$="http"] {
+    color : teal;
+}
+
+a[class*="http"] {
+    color : teal;
+}
