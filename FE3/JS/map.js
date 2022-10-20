@@ -56,18 +56,18 @@ console.log(m.entries)
 let 맵 = new Map(Object.entries({'one':1, 'two':2}))
 let 오브젝트 = Object.fromEntries(m)
 
-function Person(name, age) {
-    // new가 위의 Person 오브젝트와 함께 씌어졌을 때, 아래가 생략되어 동작한다.
-    const this1 = Object.create(Person.prototype)
+// function Person(name, age) {
+//     // new가 위의 Person 오브젝트와 함께 씌어졌을 때, 아래가 생략되어 동작한다.
+//     const this1 = Object.create(Person.prototype)
     
-    this1.name = name
-    this1.age = age
+//     this1.name = name
+//     this1.age = age
     
-    // 이것도 생략되어서 동작한다.
-    return this1
-}
+//     // 이것도 생략되어서 동작한다.
+//     return this1
+// }
 
-const lion = Person('2DC', 30)
-console.log(lion);
+// const lion = Person('2DC', 30)
+// console.log(lion);
 
-lion.name // '2DC'
+// lion.name // '2DC'
