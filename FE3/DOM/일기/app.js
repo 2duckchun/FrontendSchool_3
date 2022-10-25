@@ -41,7 +41,6 @@ function createListItem() {
         const tempTask = {
             val: inpVal,
             checked: false
-
         }
 
         // 할일 목록에 새로운 할 일을 저장합니다.
@@ -55,7 +54,6 @@ function createListItem() {
 
         // 다운로드 버튼 노출 함수
         showDownload()
-
 
     } else {
         errorMsg('내용을 작성해주세요.');
