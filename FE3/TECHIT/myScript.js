@@ -1,1 +1,0 @@
-document.write('2DC 짱짱')

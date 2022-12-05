@@ -16,7 +16,6 @@
         ></script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
-                                // props을 예약어처럼 쓰려고한다. 
             function 자기소개(props) {
                 return (
                     <div>
@@ -28,7 +27,7 @@
                     </div>
                 );
             }
-                                // 하지만 이것처럼도 작성이 가능하다.
+
             function 자기소개2(호준) {
                 return (
                     <div>
@@ -40,7 +39,7 @@
                     </div>
                 );
             }
-                                // 구조분해할당
+
             function 자기소개3({ name, age, money, house, coffee }) {
                 return (
                     <div>
