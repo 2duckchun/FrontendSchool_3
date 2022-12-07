@@ -20,7 +20,7 @@ export const useSignup = () => {
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user
-            dispatch({type: 'login', payload: user})
+
 
             if(!user) {
                 throw new Error('회원가입에 실패했습니다..ㅠ.ㅠ')
@@ -28,6 +28,7 @@ export const useSignup = () => {
 
             updateProfile(appAuth.currentUser, { displayName })
               .then(() => {
+                dispatch({type: 'login', payload: user})
                 setError(null)
                 setIsPending(false)
               }).catch((error) => {
