@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
+import { useFirestore } from '../../hooks/useFirestore'
 
-export default function DiaryForm() {
+export default function DiaryForm( {uid} ) {
 
     const [title, setTitle] = useState('')
     const [text, setText] = useState('')
+    const {addDocument, response} = useFirestore('myDiary')
     
     const handleData = (event) => {
         if (event.target.id === 'tit') {
@@ -11,12 +14,21 @@ export default function DiaryForm() {
         } else if (event.target.id === 'txt') {
             setText(event.target.value)
         }
-
     }
+
+    useEffect(() => {
+        if(response.success){
+            setTitle('')
+            setText('')
+        }
+    }, [response.success])
 
     const handleSubmit = (event) => {
         event.preventDefault()
         console.log(title, text)
+        addDocument({
+            uid, title, text
+        })
     }
 
     return (
